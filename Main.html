@@ -1,0 +1,174 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>
+    
+</title>
+<style>
+body {
+    margin:0;
+    font-size:28px;
+    font-family: Arial,sans-serif;
+    background-color: #212121;
+}
+
+.header{
+   background-color:rgb(8, 8, 8);
+  
+   padding: 30px;
+   text-align:center;
+   transition:transform.2s;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #faf1f1;
+  background-image: url(wall.jpg);
+  
+  background-size: cover;
+  padding: 90px 10px;
+  transition: 0.4s;
+  position: fixed;
+  width: 100%;
+  height: 400px;
+  top: 0;
+  z-index: 99;
+  color:white;
+}
+
+#navbar a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  padding-right: 30px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 105px;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+#navbar #logo {
+  font-size: 35px;
+  font-weight: bold;
+  transition: 0.5s;
+  padding-left: 100px;
+  padding-top: 100px;
+}
+
+
+#navbar a:hover {
+  background-color: white;
+  opacity:0.4;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+#navbar-right {
+  float: right;
+  font: white;
+  color: none;
+  padding-top: 150px;
+
+}
+
+.bg-img{
+    background-image: url("wall.jpeg");
+}
+
+#cpp{
+    background-image: url(wall2.jpg);
+    background-size:cover;
+    padding-top: 450px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 0px;
+    opacity: 0.7;
+}
+
+#c{
+    background-color: blueviolet;
+    padding-top: 450px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 0px;
+}
+</style>
+</head> 
+<body>
+
+
+    
+    <div class="bg-img">
+    <div id="navbar">
+        
+        <div id="logo"><img src="vs1.png" ></image>
+        </div>
+        
+        <div id="navbar-right">
+            <a href="javascript:voiid(0)">
+            About Us
+            </a>
+            <a href="javascript:void(0)">
+            Contact Us
+            </a>
+        </div>
+    </div>
+</div>
+    <div style="margin-top:110px;padding:15px 15px 300px;font-size:30px">
+    </div>
+
+
+
+ <div id="Cpp" style="margin-top:110px;padding:15px 15px 0px;font-size:30px">
+        <p><b>This example demonstrates how to shrink a header when the user starts to scroll the page.</b></p>
+        <p>Scroll down this frame to see the effect!</p>
+        <p>Scroll to the top to remove the effect.</p>
+        <p><b>This example demonstrates how to shrink a header when the user starts to scroll the page.</b></p>
+        <p>Lorem ipsum dolor dummy text sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+
+
+
+ <div id="C" style="margin-top:0px;padding:15px 15px 0px;font-size:30px">
+    <p><b>This example demonstrates how to shrink a header when the user starts to scroll the page.</b></p>
+    <p>Scroll down this frame to see the effect!</p>
+    <p>Scroll to the top to remove the effect.</p>
+    <p><b>This example demonstrates how to shrink a header when the user starts to scroll the page.</b></p>
+    <p>Lorem ipsum dolor dummy text sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+
+
+
+    <script>
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+            document.getElementById("navbar").style.padding = "30px 10px";
+            document.getElementById("logo").style.fontSize = "25px";
+            document.getElementById("logo").style.paddingTop="20px";
+            document.getElementById("logo").style.paddingLeft="20px";
+            document.getElementById("navbar").style.height="100px";
+
+            document.getElementById("cpp").style.paddingTop="100px";
+            
+          } else {
+            document.getElementById("navbar").style.padding = "80px 10px";
+            document.getElementById("logo").style.fontSize = "35px";
+            document.getElementById("navbar").style.height="400px";
+            document.getElementById("logo").style.paddingTop="100px";
+            document.getElementById("logo").style.paddingLeft="100px";
+          }
+        }
+
+
+        
+        </script>
+</body>
+</html>
