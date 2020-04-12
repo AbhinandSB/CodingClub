@@ -12,7 +12,8 @@ body {
     margin:0;
     font-size:28px;
     font-family: Arial,sans-serif;
-    background-color: #212121;
+    /*background-image: url('wall.png');*/
+    background-color:grey;
 }
 
 .header{
@@ -37,6 +38,7 @@ body {
   top: 0;
   z-index: 99;
   color:white;
+  box-shadow:0px 10px 20px #1A237E;
 }
 
 #navbar a {
@@ -56,8 +58,20 @@ body {
   font-size: 35px;
   font-weight: bold;
   transition: 0.5s;
-  padding-left: 100px;
-  padding-top: 100px;
+  padding-left: 400px;
+  padding-top: 10px;
+}
+
+#header{
+  padding-left:0px;
+  padding-top: 10px;
+  text-align: center;
+  position: relative;
+  width:100%;
+  
+  font-size: 190%;
+  font-family: "Lucida Console", Courier, monospace;
+  transition: 0.5s;
 }
 
 
@@ -75,8 +89,8 @@ body {
 #navbar-right {
   float: right;
   font: white;
-  color: none;
-  padding-top: 150px;
+  
+  padding-top: 80px;
 
 }
 
@@ -85,24 +99,129 @@ body {
 }
 
 #cpp{
-    background-image: url(wall4.png);
+    background-image: url('wall5_1.jpg');
+    /*background-color: rgb(64, 65, 66);*/
     background-size:cover;
-    padding-top: 0px;
+    padding-top: 10px;
     margin-left: 320px;
     margin-right: 320px;
     margin-top: 0px;
-    opacity: 0.7;
-    color: white;
+    
+    color: black;
+}
+
+#cont1{
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+#cont2{
+  padding-left: 60px;
+  
 }
 
 #c{
-    background-image: url(wall3.jpg);
+    background-image: url(wall6.jpg);
     padding-top: 250px;
     margin-left: 320px;
     margin-right: 320px;
     margin-top: 0px;
-    color:white;
+    color:black;
+    background-size:cover;
 }
+
+/*------------------------------------------------------------------------*/
+
+#events{
+  margin-left: 320px;
+  margin-right: 320px;
+  padding-left:30px;
+  background-color: rgb(109, 77, 224);
+  color:black;
+  height:700px;
+}
+
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  width: 500px;
+  float:left;
+  clear:none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width:500px;
+  
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  width:  500px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+
+.dropbtn2 {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  width: 500px;
+}
+
+.dropdown2 {
+  position: relative;
+  display: inline-block;
+  width: 500px;
+ 
+}
+
+.dropdown-content2 {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  width: 500px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content2 a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content2 a:hover {background-color: #ddd;}
+
+.dropdown2:hover .dropdown-content2 {display: block;}
+
+.dropdown2:hover .dropbtn2 {background-color: #3e8e41;}
+
+
+
 
 /*------------------------------------------------------------------------*/
 .slideshow-container {
@@ -118,15 +237,16 @@ body {
   cursor: pointer;
   position: absolute;
   top: 50%;
-  width: 40px;
+  width: 150px;
   padding: 126px;
-  margin-top: -22px;
+  margin-top: -12px;
   color: white;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
+  border-radius: 0px 3px 0;
   user-select: none;
+
 }
 
 /* Position the "next button" to the right */
@@ -140,7 +260,9 @@ body {
   background-color: rgba(0,0,0,0.8);
 }
 
-
+.round{
+  border-radius:100%;
+}
 
 /* Number text (1/3 etc) */
 .numbertext {
@@ -205,7 +327,8 @@ body {
 .column {
   float: left;
   width: 25%;
-  padding: 120px 20px;
+ padding-top: 100px;
+ padding-left: 20px;
 }
 
 .row {
@@ -299,12 +422,13 @@ position:center;}
   font-size: 30px;
 }
 
-#end{
+/*#end{
+  padding-top:40px;
     background-color: black;
-    height: 100px;
+    height: 10px;
     width:100%;
 }
-
+*/
 .spinner{
     width: 80px;
     height: 80px;
@@ -340,6 +464,10 @@ position:center;}
   top:0;
  }
 /*----------------------------------------------------------------------*/
+
+
+/*----------------------------------------------------------------------*/
+
 </style>
 </head> 
 <body>
@@ -356,11 +484,14 @@ position:center;}
 
     
     <div class="bg-img">
+      
     <div id="navbar">
-        
+      
         <div id="logo"><img src="cc-logo2.png" ></image>
         </div>
-        
+        <div id="header">
+          Coding Club
+        </div>
         <div id="navbar-right">
             <a href="javascript:voiid(0)">
             About Us
@@ -384,28 +515,28 @@ position:center;}
       </div>
 
 
-    <div class="slideshow-container">
+<div class="slideshow-container">
 
         <div class="mySlides fade">
-          <div class="numbertext">1 / 3</div>
+         
           <img src="1.png" style="width:100%">
-          <div class="text"></div>
+          
         </div>
-        
+            
         <div class="mySlides fade">
-          <div class="numbertext">2 / 3</div>
+         
           <img src="2.jpg" style="width:100%">
-          <div class="text"></div>
+          
         </div>
         
         <div class="mySlides fade">
-          <div class="numbertext">3 / 3</div>
+          
           <img src="3.jpg" style="width:100%">
-          <div class="text"></div>
+         
         </div>
         
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <a class="prev round" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next round" onclick="plusSlides(1)">&#10095;</a>
         
         </div>
          <br>
@@ -446,7 +577,7 @@ position:center;}
             </script>
 
 
-<div class="row">
+  <div class="row">
     <div class="column">
       <div class="card">
         <p><i class="fa fa-user"></i></p>
@@ -475,24 +606,73 @@ position:center;}
   </div>
   
 
- <div id="Cpp" style="margin-top:8px;padding:8px 15px 0px;font-size:30px">
-        <p><b>This example demonstrates how to shrink a header when the user starts to scroll the page.</b></p>
-        <p>Scroll down this frame to see the effect!</p>
-        <p>Scroll to the top to remove the effect.</p>
-        <p><b>This example demonstrates how to shrink a header when the user starts to scroll the page.</b></p>
-        <p>Lorem ipsum dolor dummy text sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+ <div id="Cpp" style="margin-top:100px;padding:50px 15px 0px;font-size:30px">
+        <p id="cont1">The Coding Club was started in November,2016 by a group of
+          students from the departments of ECE and ISE who wanted to
+          interact with like-minded peers and explore the world of computerscience.<br>They are driven by their passion for coding and
+          hunger to learn,which has helped the club scale new heights.
+          Coding Club aims to establish a coding culture, reaching every
+          student passionate about coding and we believe in <br><br>
+                         #MakeCodingGreatAgain.<br><br></p>
       </div>
 
 
 
  <div id="C" style="margin-top:0px;padding:15px 15px 0px;font-size:30px">
-    <p><b>This example demonstrates how to shrink a header when the user starts to scroll the page.</b></p>
-    <p>Scroll down this frame to see the effect!</p>
-    <p>Scroll to the top to remove the effect.</p>
-    <p><b>This example demonstrates how to shrink a header when the user starts to scroll the page.</b></p>
-    <p>Lorem ipsum dolor dummy text sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  </div>
+ <p id="cont2"> Achievements<br>
+  • Participated in theACM-ICPC Regionals at Amritapuri, 2018<br>
+  • Winners and 2nd runners up at XCeed’s Geek!athon, 2018<br>
+  • 2nd runners up at Bosch’s iNSCRIBE 2017<br>
+  • 2nd runners up in Cisco Ideathon 2018<br>
+  • Asia finalist, Microsoft Imagine Cup.<br>
+  • Runner up, Cisco IoT Hack, 2018.<br>
+  • Winners and Runners up, Techathlon, Curl Analytics.<br>
+  • Head of Cisco IoT Center of Excellence.<br>
+  • Winner inGenius hackathon2018.<br>
+  • Over 20 students from the 3rd year have received internships over the last semester.<br>
+  <br><br>
+  </p>
+</div>
 
+
+
+
+
+
+ <div id="events">
+   <div class="row">
+      <div class="col-sm-6" style="background-color:yellow;">
+               
+        <div class="dropdown">
+                               <button class="dropbtn">Code Marathon 2018</button>
+                               <div class="dropdown-content">
+                                  <a href="#">The club successfully organized the second edition of Code Marathon. The event saw 8speakers across theday whodiscussed
+                                              withthestudentsvariousproblemsolvingtechniquesrelatedto
+                                              Data Structures and Algorithms followed by brainstorming problems to solve
+                                  </a>
+                               </div>
+         </div>
+
+      </div>
+        
+      <div class="col-sm-6" style="background-color: pink;">
+          
+        <div class="dropdown">
+                            <button class="dropbtn">Code Marathon 2018</button>
+                            <div class="dropdown-content">
+                                <a href="#">The club successfully organized the second edition of Code Marathon. The event saw 8speakers across theday whodiscussed
+                                            withthestudentsvariousproblemsolvingtechniquesrelatedto
+                                            Data Structures and Algorithms followed by brainstorming problems to solve
+                                 </a>
+                              </div>
+          </div>    
+
+          
+      </div> 
+        
+    
+    </div>
+</div>
 
   <div id="end">
     
@@ -507,26 +687,26 @@ position:center;}
             if (document.body.scrollTop > 90 || document.documentElement.scrollTop > 90) {
             document.getElementById("navbar").style.padding = "30px 10px";
             document.getElementById("logo").style.fontSize = "15px";
-            document.getElementById("logo").style.paddingTop="0px";
-            document.getElementById("logo").style.paddingLeft="20px";
+            document.getElementById("logo").style.paddingTop="10px";
+            document.getElementById("logo").style.paddingLeft="100px";
             document.getElementById("navbar").style.height="150px";
+            document.getElementById("header").style.paddingTop="20px";
+            document.getElementById("header").style.paddingLeft="10px";
 
             document.getElementById("cpp").style.paddingTop="100px";
             
-          } else if(
-              (document.body.scrollTop <90) & (document.body.scrollTop >40) ||
-               (document.documentElement.scrollTop <90)&(document.documentElement.scrollTop >40) ){
+          } else {
             document.getElementById("navbar").style.padding = "80px 10px";
             
             document.getElementById("navbar").style.height="400px";
             document.getElementById("logo").style.fontSize = "35px";
-            document.getElementById("logo").style.paddingTop="100px";
-            document.getElementById("logo").style.paddingLeft="100px";
+            document.getElementById("logo").style.paddingTop="10px";
+            document.getElementById("logo").style.paddingLeft="400px";
           }
         }
     
 
-        
+    
         </script>
 </body>
 </html>
